@@ -1,0 +1,23 @@
+print out 1-100
+cw is fine
+div by 3 print out "fizz"
+div by 5 print out "buzz"
+if div by both 3 and 5, print both "fizzbuzz" 
+Examples:
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+...
+14
+fizzbuzz
+
+Extend for multiple rules
+
+Put on Github
+
+8 "clux"
