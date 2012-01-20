@@ -10,7 +10,7 @@ namespace SimpleConsoleApp
 {
     internal class Program
     {
-        private static int _startInt, _endInt;
+        private static int _startInt, _endInt, _count;
         private static string _rulesFilePath = "rules.file";
         private static IEnumerable<IRule> _rulesFromFile;
 
@@ -22,7 +22,7 @@ namespace SimpleConsoleApp
                 Console.ReadLine();
                 return;
             }
-            List<int> ints = Enumerable.Range(_startInt, _endInt).ToList();
+            List<int> ints = Enumerable.Range(_startInt, _count).ToList();
             if (!GetRulesFromFile())
             {
                 Console.ReadLine();
@@ -42,6 +42,7 @@ namespace SimpleConsoleApp
             {
                 _startInt = int.Parse(args.First(x => x.StartsWith("s=")).Substring(2));
                 _endInt = int.Parse(args.First(x => x.StartsWith("e=")).Substring(2));
+                _count = _endInt - _startInt + 1;
                 if (args.Any(x => x.StartsWith("f=")))
                     _rulesFilePath = args.First(x => x.StartsWith("f=")).Substring(2);
             }
