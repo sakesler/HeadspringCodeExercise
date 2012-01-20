@@ -8,7 +8,7 @@ using SimpleRulesEngine.Evaluators;
 namespace Specs
 {
     [TestFixture]
-    public class When_subject_checked_against_rule
+    public class When_subject_checked_against_MatchingRulesAggregator
     {
         private readonly MatchingRulesAggregator _matchingRulesAggregator = new MatchingRulesAggregator();
 

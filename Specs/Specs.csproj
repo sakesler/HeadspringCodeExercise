@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="When_using_a_DivisibleByReturn_rule.spec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="When_using_a_PrintMatchedRulesResultToConsole_evaluator.cs" />
+    <Compile Include="When_subject_checked_against_MatchingRulesAggregator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
